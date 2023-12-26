@@ -52,7 +52,7 @@ function generate() {
 
   var structures = file_se_nikalo_arrays(note, variation)
   var array_to_url_mapper = (structure) => {
-    return 'https://chordgenerator.net/' + note + var_map[variation] + '.png?p=' + convertStructureToString(structure) + '&s=100';
+    return 'https://chordgenerator.net/' + note.replace("Sharp", "%23") + var_map[variation] + '.png?p=' + convertStructureToString(structure) + '&s=100';
   }
   urls = structures.map(s => array_to_url_mapper(s))
   // console.log(urls);
