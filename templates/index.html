@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                {{ title }}
+            </h1>
+            <p class="subtitle">
+                {{ description }}
+            </p>
+
+            <div class="columns">
+                <!-- Left third of the page -->
+                <!-- has left side dropdowns and buttons -->
+                <div class="column is-one-third has-background-light">
+                    <div class="field">
+                        <div class="control select">
+                            <select id="note-select">
+                                {% for note in notes %}
+                                <option class="note-value" value={{note}}>{{ note }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="block"></div>
+                        <div class="control select">
+                            <select id="variation-select">
+                                {% for variation in variations %}
+                                <option class="variation-value" value={{variation}}>{{ variation }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="block"></div>
+                        <div class="control button is-success" onclick="generate()">Generate</div>
+                    </div>
+
+                </div>
+
+                <!-- right side of the page that shows output -->
+                <div class="column is-two-third has-background-grey-light">
+                    <div class="columns">
+                        <div class="column has-text-primary-light">
+                            <button class="button is-link is-light" onclick="counterminus()">
+                                <span class="icon">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="column">
+                            <figure class="image image is-4by5">
+                                <img id="myImage" src="">
+                            </figure>
+                        </div>
+                        <div class="column has-text-primary-light">
+                            <button class="button is-link is-light" onclick="counterplus()">
+                                <span class="icon">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./static/js/index.js"></script>
+</body>
+
+</html>

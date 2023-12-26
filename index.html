@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                
+            </h1>
+            <p class="subtitle">
+                
+            </p>
+
+            <div class="columns">
+                <!-- Left third of the page -->
+                <!-- has left side dropdowns and buttons -->
+                <div class="column is-one-third has-background-light">
+                    <div class="field">
+                        <div class="control select">
+                            <select id="note-select">
+                                
+                                <option class="note-value" value=C>C</option>
+                                
+                                <option class="note-value" value=CSharp>CSharp</option>
+                                
+                                <option class="note-value" value=D>D</option>
+                                
+                                <option class="note-value" value=DSharp>DSharp</option>
+                                
+                                <option class="note-value" value=E>E</option>
+                                
+                                <option class="note-value" value=F>F</option>
+                                
+                                <option class="note-value" value=FSharp>FSharp</option>
+                                
+                                <option class="note-value" value=G>G</option>
+                                
+                                <option class="note-value" value=GSharp>GSharp</option>
+                                
+                                <option class="note-value" value=A>A</option>
+                                
+                                <option class="note-value" value=ASharp>ASharp</option>
+                                
+                                <option class="note-value" value=B>B</option>
+                                
+                            </select>
+                        </div>
+                        <div class="block"></div>
+                        <div class="control select">
+                            <select id="variation-select">
+                                
+                                <option class="variation-value" value=Major>Major</option>
+                                
+                                <option class="variation-value" value=Minor>Minor</option>
+                                
+                                <option class="variation-value" value=Augmented>Augmented</option>
+                                
+                                <option class="variation-value" value=Diminished>Diminished</option>
+                                
+                                <option class="variation-value" value=Seventh>Seventh</option>
+                                
+                                <option class="variation-value" value=MajorSeventh>MajorSeventh</option>
+                                
+                                <option class="variation-value" value=MinorSeventh>MinorSeventh</option>
+                                
+                                <option class="variation-value" value=Sus2>Sus2</option>
+                                
+                                <option class="variation-value" value=Sus4>Sus4</option>
+                                
+                                <option class="variation-value" value=MinorMajorSeventh>MinorMajorSeventh</option>
+                                
+                                <option class="variation-value" value=DiminishedSeventh>DiminishedSeventh</option>
+                                
+                                <option class="variation-value" value=MajorNinth>MajorNinth</option>
+                                
+                                <option class="variation-value" value=MinorNinth>MinorNinth</option>
+                                
+                                <option class="variation-value" value=AddNinth>AddNinth</option>
+                                
+                                <option class="variation-value" value=AddEleventh>AddEleventh</option>
+                                
+                                <option class="variation-value" value=MinorSixth>MinorSixth</option>
+                                
+                                <option class="variation-value" value=MajorSixth>MajorSixth</option>
+                                
+                            </select>
+                        </div>
+                        <div class="block"></div>
+                        <div class="control button is-success" onclick="generate()">Generate</div>
+                    </div>
+
+                </div>
+
+                <!-- right side of the page that shows output -->
+                <div class="column is-two-third has-background-grey-light">
+                    <div class="columns">
+                        <div class="column has-text-primary-light">
+                            <button class="button is-link is-light" onclick="counterminus()">
+                                <span class="icon">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="column">
+                            <figure class="image image is-4by5">
+                                <img id="myImage" src="">
+                            </figure>
+                        </div>
+                        <div class="column has-text-primary-light">
+                            <button class="button is-link is-light" onclick="counterplus()">
+                                <span class="icon">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./static/js/index.js"></script>
+</body>
+
+</html>
