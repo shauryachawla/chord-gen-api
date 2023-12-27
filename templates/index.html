@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -16,7 +16,7 @@
                 {{ title }}
             </h1>
             <p class="subtitle">
-                {{ description }}
+                Inspired by <a href="https://guitarmadillo.com/guitar-chords">Guitarmadillo's Chord Generator</a>.
             </p>
 
             <div class="columns">
@@ -70,6 +70,10 @@
                     </div>
                 </div>
             </div>
+
+            <p>
+              Check this project's <a href="https://github.com/shauryachawla/chord-gen-api">Github</a> for more.
+            </p>
         </div>
     </section>
     <script src="./static/js/index.js"></script>
