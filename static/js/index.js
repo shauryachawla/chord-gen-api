@@ -90,3 +90,4 @@ const getGeneratedChordImage = async (note, variation) => {
   return response.blob
 }
 
+window.onload = generate()
