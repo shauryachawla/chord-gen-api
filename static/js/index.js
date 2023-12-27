@@ -18,7 +18,8 @@ var var_map = {
   'AddNinth': 'add9',
   'AddEleventh': 'add11',
   'MinorSixth': 'm6',
-  'MajorSixth': '6'
+  'MajorSixth': '6',
+  'AddSixthAddNinth': '6/9'
 }
 
 document.querySelectorAll('.dropdown').forEach(item => {
